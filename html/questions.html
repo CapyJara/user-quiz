@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <title>Questions</title>
+</head>
+<body>
+
+    <header>
+        <h1>Questions</h1>
+        <a href="./index.html">Home</a>
+        <a href="./questions.html">Quiz</a>
+        <a href="./results.html">Resutls</a>
+    </header>
+
+    <main>
+
+        <form id="form-questions">
+
+            <fieldset>
+                <legend>What kind of socks do you wear?</legend>
+
+                    <label>
+                        <input type="radio" name="socks" id="socks" value="no-see"> No See-Ums (good +1)
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="socks" id="socks" value="tall-socks"> Tall Socks (bad +1)
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="socks" id="socks" value="stinky-socks"> Stinky Socks (good +2)
+                    </label>
+            
+            </fieldset>
+ 
+            <fieldset>
+                <legend>How much butter do you put on you bread?</legend>
+
+                    <label>
+                        <input type="radio" name="butter" id="butter" value="no-butter"> No Butter For Me (bad+2)
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="butter" id="butter" value="lots-of-butter"> Do you mean how much bread with my butter? (good +2)
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="butter" id="butter" value="average-butter"> Just Enough (good +1)
+                    </label>
+            
+            </fieldset>
+
+            <button id="question-submit">Submit</button>
+        </form>
+
+    </main>
+<script type="module" src="../src//questions/questions.js">  </script>
+</body>
+</html>
