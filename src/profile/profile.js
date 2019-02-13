@@ -7,7 +7,7 @@ formProfile.addEventListener('submit', function(event) {
     const userProfile = {
         name: formData.get('name'),
         // avatar: formData.get('avatar')
-    }
+    };
 
     const json = JSON.stringify(userProfile);
     window.localStorage.setItem('userProfile', json);    

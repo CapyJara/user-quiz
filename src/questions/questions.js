@@ -2,6 +2,8 @@ const formQuestions = document.getElementById('form-questions');
 import butterJudgement from '../calculate/score-butter.js';
 import sockJudgement from '../calculate/score-socks.js';
 
+import profilePull from '../profile-pull.js';
+profilePull();
 
 formQuestions.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -11,7 +13,7 @@ formQuestions.addEventListener('submit', function(event) {
     const answers = {
         sock: formData.get('socks'),
         butter: formData.get('butter')
-    }
+    };
     
     const scorecard = {
         goodPerson: 0,
